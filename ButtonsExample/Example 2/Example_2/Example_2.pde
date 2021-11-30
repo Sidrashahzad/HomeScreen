@@ -21,8 +21,6 @@ void draw ()
   background(white);
   rect(ButtonX, ButtonY, ButtonWidth, ButtonHeight);
   textDraw1();
-  rect(Button2X, Button2Y, Button2Width, Button2Height);
-  textDraw2() ;
   if (rect == true) rect( rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight) ;
   if (circle == true) ellipse(CircleX, CircleY, CircleDiameter, CircleDiameter) ;
   
@@ -30,10 +28,19 @@ void draw ()
 
 void mousePressed() 
 {
- rect = false;
- circle = false;
- if (mouseX>ButtonX &&  mouseX<ButtonX+ButtonWidth &&  mouseY>ButtonY && mouseY<ButtonY+ButtonHeight) rect = true ;
- if(mouseX>Button2X &&  mouseX<Button2X+Button2Width &&  mouseY>Button2Y && mouseY<Button2Y+Button2Height) circle = true ;
+
+ if (mouseX>ButtonX &&  mouseX<ButtonX+ButtonWidth &&  mouseY>ButtonY && mouseY<ButtonY+ButtonHeight)
+ { 
+   if ( rect==false){
+    rect = true ;
+   circle = false;
+  } else {
+   rect = false ;
+   circle = true;
+  }
+ 
+ } 
+  
 } //end void mousePressed()
 
 void keyPressed() 
