@@ -124,15 +124,24 @@ void mousePressed()
   { triangle = false ; 
    button2 = false ;
    textDraw2= false ; 
-  button3 = false ;
-  if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1) triangle = true;  button2=true ; textDraw2 =true ;  button3 = false ;}
+
+  if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1) triangle = true;  button2=true ; textDraw2 =true ;  }
+  
+  {
+    button3 = false ;
+     if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1)  button3 = true ;
+     
+     {
+  
+      textDraw3 = false ;
+     if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1)  textDraw3 =  true ;
   
   
   
   {
-    triangle = 
+    t
     rect1 = false ;
-   button3 = false ;
+   
    textDraw3 = false ;
    if (mouseX>buttonX2 &&  mouseX<buttonX2+buttonWidth2 &&  mouseY>buttonY2 && mouseY<buttonY2+buttonHeight2) rect1 = true ; button3 = true ; textDraw3 =true ;  triangle = true;}
   
@@ -173,7 +182,7 @@ void mousePressed()
   if (mouseX>buttonX9&& mouseX<buttonX9+buttonWidth9&& mouseY>buttonY9&& mouseY<buttonY9+buttonheight9)textDraw10=true;}
     
   
- if (mouseX>buttonX10 &&  mouseX<buttonX10+buttonWidth10 &&  mouseY>buttonY10  && mouseY<buttonY10+buttonheight10) exit ();
+ {if (mouseX>buttonX10 &&  mouseX<buttonX10+buttonWidth10 &&  mouseY>buttonY10  && mouseY<buttonY10+buttonheight10) exit ();}
  
 }// end mousePressed()
 
