@@ -74,15 +74,40 @@ rectY2 = displayHeight* 10/28;
 rectWidth2 = displayWidth * 1/8;
 rectHeight2 =displayHeight* 3/28;
 
+triX4 = displayWidth * 10/12;
+triY4  = displayHeight* 10/28;
+triX5 =displayWidth * 8/12;
+triY5  = displayHeight* 12/28;
+triX6 = displayWidth * 9/12;
+triY6  = displayHeight* 14/28;
+
 buttonX6= displayWidth * 9/12;
 buttonY6 = displayHeight* 14/28;
 buttonWidth6 =displayWidth * 1/8; 
 buttonHeight6= displayHeight* 3/28;
 
+triX4 = displayWidth * 10/12;
+triY4  = displayHeight* 10/28;
+triX5 =displayWidth * 9/12;
+triY5  = displayHeight* 12/28;
+triX6 = displayWidth * 11/12;
+triY6  = displayHeight* 14/28;
+
+rectX3= displayWidth *  1/12; 
+rectY3= displayHeight*  20/28;
+rectWidth3= displayWidth  * 1/8;
+ rectHeight3= displayHeight* 2/28;
+
+
 buttonX7= displayWidth * 1/12;
 buttonY7 = displayHeight* 24/28;
 buttonWidth7= displayWidth* 1/8;
 buttonHeight7=displayHeight* 3/28;
+
+
+circleX2= displayWidth * 6/12;
+circleY2 = displayHeight* 22/28;
+circleDiameter2 =displayWidth * 1/20;
 
  buttonX8  = displayWidth * 5/12;  
  buttonY8 = displayHeight* 24/28;
@@ -94,6 +119,13 @@ buttonHeight7=displayHeight* 3/28;
 buttonWidth9 = displayWidth* 1/8;
  buttonheight9 = displayHeight* 3/28;
  
+ 
+ triX7= displayWidth * 10/12;
+ triY7 = displayHeight* 20/28;
+ triX8 =displayWidth * 9/12;
+ triY8 = displayHeight* 22/28;
+ triX9 = displayWidth * 11/12;
+ triY9 = displayHeight* 22/28;
  
  
  buttonX10  = displayWidth * 5/12;

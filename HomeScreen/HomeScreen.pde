@@ -20,11 +20,16 @@ float buttonX4, buttonY4, buttonWidth4, buttonHeight4;
 float rectX2,rectY2,rectWidth2,rectHeight2;
 float buttonX5, buttonY5, buttonWidth5, buttonHeight5;
 float buttonX6, buttonY6, buttonWidth6, buttonHeight6;
+float triX4, triY4, triX5, triY5, triX6, triY6;
 float buttonX7,buttonY7,buttonWidth7,buttonHeight7;
+float rectX3,rectY3, rectWidth3, rectHeight3;
 float buttonX8, buttonY8, buttonWidth8,buttonHeight8;
+float circleX2,circleY2, circleDiameter2;
 float buttonX9,buttonY9,buttonWidth9, buttonheight9;
+float triX7, triY7, triX8,triY8, triX9,triY9;
 float buttonX10,buttonY10,buttonWidth10,buttonheight10;
 color black=#000000, white=#FFFFFF , blue=#1621DE;
+
 Boolean  triangle = false ; 
 Boolean  button2=false;
 Boolean  textDraw2= false;
@@ -35,6 +40,12 @@ Boolean Circle1 = false ;
 Boolean button4 = false ;
 Boolean textDraw4 = false ;
 Boolean rect2= false;
+Boolean triangle2=false;
+Boolean rect3=false;
+Boolean Circle2=false;
+Boolean triangle3=false;
+Boolean button10=false;
+Boolean textDraw10=false;
 void setup()
 {
   fullScreen();
@@ -66,23 +77,33 @@ if (textDraw4==true ) textDraw4();
 if (rect2==true) rect(rectX2,rectY2,rectWidth2,rectHeight2);
   rect(buttonX5, buttonY5, buttonWidth5, buttonHeight5);
   textDraw5();
+  
   rect(ptX5, ptY5, rectWidth, rectHeight);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
   textDraw1();
   rect(ptX6, ptY6, rectWidth, rectHeight);
+  if (triangle2==true ) triangle(triX4, triY4, triX5, triY5, triX6, triY6);
   rect(buttonX6, buttonY6, buttonWidth6, buttonHeight6);
+
   textDraw6();
  rect(ptX7, ptY7, rectWidth, rectHeight);
  rect(buttonX7,buttonY7,buttonWidth7,buttonHeight7);
  textDraw7();
+ 
+if (rect3==true)rect( rectX3,rectY3, rectWidth3, rectHeight3);
  rect(ptX8, ptY8, rectWidth, rectHeight);
  rect( buttonX8, buttonY8, buttonWidth8,buttonHeight8);
  textDraw8();
+ if( Circle2 == true)ellipse(circleX2,circleY2,circleDiameter2, circleDiameter2);
   rect(ptX9, ptY9, rectWidth, rectHeight);
   rect(buttonX9,buttonY9,buttonWidth9, buttonheight9);
   textDraw9();
- rect(buttonX10,buttonY10,buttonWidth10,buttonheight10);
-  textDraw10();
+ 
+  
+  if (triangle3 == true) triangle(triX7, triY7, triX8,triY8, triX9,triY9);
+  
+if(button10==true) rect(buttonX10,buttonY10,buttonWidth10,buttonheight10);
+  if (textDraw10==true)textDraw10();
   fill(blue) ;
    ellipse(ptX1, ptY1, circleDiameter, circleDiameter);
    ellipse(ptX2, ptY2, circleDiameter, circleDiameter);
@@ -127,9 +148,30 @@ void mousePressed()
    if (mouseX>buttonX4&&  mouseX<buttonX4 +buttonWidth4 && mouseY>buttonY4  && mouseY<buttonY4+buttonHeight4) rect2= true ; }
   
   
+  {
+  triangle2=false;
+   if (mouseX>buttonX5&& mouseX<buttonX5 +buttonWidth5 && mouseY>buttonY5 && mouseY<buttonY5+buttonHeight5)triangle2= true ; }
   
   
+  {
+    rect3=false;
+  if (mouseX>buttonX6&& mouseX<buttonX6 +buttonWidth6&& mouseY>buttonY6 && mouseY<buttonY6+buttonHeight6)rect3=true ; }
   
+  {
+    Circle2=false;
+   if (mouseX>buttonX7&& mouseX<buttonX7+buttonWidth7&& mouseY>buttonY7&& mouseY<buttonY7+buttonHeight7) Circle2=true;}
+   
+   {triangle3=false;
+   if (mouseX>buttonX8&& mouseX<buttonX8+buttonWidth8&& mouseY>buttonY8&& mouseY<buttonY8+buttonHeight8) triangle3=true;   }
+   
+  { 
+    button10=false;
+    
+   if (mouseX>buttonX9&& mouseX<buttonX9+buttonWidth9&& mouseY>buttonY9&& mouseY<buttonY9+buttonheight9)  button10=true ; } 
+   
+  { textDraw10=false;
+  if (mouseX>buttonX9&& mouseX<buttonX9+buttonWidth9&& mouseY>buttonY9&& mouseY<buttonY9+buttonheight9)textDraw10=true;}
+    
   
  if (mouseX>buttonX10 &&  mouseX<buttonX10+buttonWidth10 &&  mouseY>buttonY10  && mouseY<buttonY10+buttonheight10) exit ();
  
