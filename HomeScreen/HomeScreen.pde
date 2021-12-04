@@ -87,29 +87,29 @@ void draw() {
 if (textDraw4==true ) textDraw4();
   rect(ptX4, ptY4, rectWidth, rectHeight);
 if (rect2==true) rect(rectX2,rectY2,rectWidth2,rectHeight2);
-  rect(buttonX5, buttonY5, buttonWidth5, buttonHeight5);
-  textDraw5();
+ if ( button5 == true)  rect(buttonX5, buttonY5, buttonWidth5, buttonHeight5);
+ if (textDraw5==true ) textDraw5();
   
   rect(ptX5, ptY5, rectWidth, rectHeight);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
   textDraw1();
   rect(ptX6, ptY6, rectWidth, rectHeight);
   if (triangle2==true ) triangle(triX4, triY4, triX5, triY5, triX6, triY6);
-  rect(buttonX6, buttonY6, buttonWidth6, buttonHeight6);
+  if ( button6 == true) rect(buttonX6, buttonY6, buttonWidth6, buttonHeight6);
 
-  textDraw6();
+ if (textDraw6==true )  textDraw6();
  rect(ptX7, ptY7, rectWidth, rectHeight);
- rect(buttonX7,buttonY7,buttonWidth7,buttonHeight7);
- textDraw7();
+ if ( button7 == true) rect(buttonX7,buttonY7,buttonWidth7,buttonHeight7);
+ if (textDraw7==true ) textDraw7();
  
 if (rect3==true)rect( rectX3,rectY3, rectWidth3, rectHeight3);
  rect(ptX8, ptY8, rectWidth, rectHeight);
- rect( buttonX8, buttonY8, buttonWidth8,buttonHeight8);
- textDraw8();
+  if ( button8 == true)rect( buttonX8, buttonY8, buttonWidth8,buttonHeight8);
+ if (textDraw8==true ) textDraw8();
  if( Circle2 == true)ellipse(circleX2,circleY2,circleDiameter2, circleDiameter2);
   rect(ptX9, ptY9, rectWidth, rectHeight);
-  rect(buttonX9,buttonY9,buttonWidth9, buttonheight9);
-  textDraw9();
+   if ( button9 == true)rect(buttonX9,buttonY9,buttonWidth9, buttonheight9);
+ if (textDraw9==true )  textDraw9();
  
   
   if (triangle3 == true) triangle(triX7, triY7, triX8,triY8, triX9,triY9);
