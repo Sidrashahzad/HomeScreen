@@ -40,10 +40,22 @@ Boolean Circle1 = false ;
 Boolean button4 = false ;
 Boolean textDraw4 = false ;
 Boolean rect2= false;
+Boolean button5 = false ;
+Boolean textDraw5=false;
 Boolean triangle2=false;
+Boolean button6 = false ;
+Boolean textDraw6 =false;
 Boolean rect3=false;
+Boolean button7 = false ;
+Boolean textDraw7 =false;
 Boolean Circle2=false;
+Boolean button7 = false ;
+Boolean textDraw7 =false;
 Boolean triangle3=false;
+Boolean button8 = false ;
+Boolean textDraw8 =false;
+Boolean button9 = false ;
+Boolean textDraw9 =false;
 Boolean button10=false;
 Boolean textDraw10=false;
 void setup()
@@ -127,34 +139,65 @@ void mousePressed()
 
   if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1) triangle = true;  button2=true ; textDraw2 =true ;  }
   
+ 
+  
+  
   {
+ 
+    rect1 = false ;
+   
+    
+   if (mouseX>buttonX2 &&  mouseX<buttonX2+buttonWidth2 &&  mouseY>buttonY2 && mouseY<buttonY2+buttonHeight2) rect1 = true ; }
+  
+  
+   {
     button3 = false ;
-     if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1)  button3 = true ;
+     if (mouseX>buttonX2 &&  mouseX<buttonX2+buttonWidth2 &&  mouseY>buttonY2 && mouseY<buttonY2+buttonHeight2)  button3 = true ;}
      
      {
   
       textDraw3 = false ;
-     if (mouseX>buttonX1 &&  mouseX<buttonX1+buttonWidth1 &&  mouseY>buttonY1 && mouseY<buttonY1+buttonHeight1)  textDraw3 =  true ;
-  
-  
-  
-  {
-    t
-    rect1 = false ;
-   
-   textDraw3 = false ;
-   if (mouseX>buttonX2 &&  mouseX<buttonX2+buttonWidth2 &&  mouseY>buttonY2 && mouseY<buttonY2+buttonHeight2) rect1 = true ; button3 = true ; textDraw3 =true ;  triangle = true;}
+     if (mouseX>buttonX2 &&  mouseX<buttonX2+buttonWidth2 &&  mouseY>buttonY2 && mouseY<buttonY2+buttonHeight2)  textDraw3 =  true ;}
   
 
   
-  {  button4 = false ;
-    textDraw4 = false;
+  {  
     Circle1 = false ;
-     if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)  Circle1 = true ;  button4 = true;  textDraw4 = true ; }
+     if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)  Circle1 = true ;  }
   
+  
+  
+  
+   {  
+   button4 = false ;
+
+     if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)    button4 = = true ;  }
+  
+  
+  {
+  textDraw4 = false ;
+    if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)  textDraw4 = true ;  }
+  
+  
+  
+
   {
    rect2= false;
    if (mouseX>buttonX4&&  mouseX<buttonX4 +buttonWidth4 && mouseY>buttonY4  && mouseY<buttonY4+buttonHeight4) rect2= true ; }
+  
+  
+  
+    {
+ button5= false;
+   if (mouseX>buttonX4&&  mouseX<buttonX4 +buttonWidth4 && mouseY>buttonY4  && mouseY<buttonY4+buttonHeight4) button5= true ; }
+  
+  
+  
+    {
+    textDraw5 = false;
+   if (mouseX>buttonX4&&  mouseX<buttonX4 +buttonWidth4 && mouseY>buttonY4  && mouseY<buttonY4+buttonHeight4) textDraw5 = true ; }
+  
+  
   
   
   {
@@ -162,17 +205,72 @@ void mousePressed()
    if (mouseX>buttonX5&& mouseX<buttonX5 +buttonWidth5 && mouseY>buttonY5 && mouseY<buttonY5+buttonHeight5)triangle2= true ; }
   
   
+  
+
+   {
+ button6=false;
+   if (mouseX>buttonX5&& mouseX<buttonX5 +buttonWidth5 && mouseY>buttonY5 && mouseY<buttonY5+buttonHeight5) button6 = true ; }
+  
+   {
+   textDraw6=false;
+   if (mouseX>buttonX5&& mouseX<buttonX5 +buttonWidth5 && mouseY>buttonY5 && mouseY<buttonY5+buttonHeight5)  textDraw6= true ; }
+  
+
   {
     rect3=false;
   if (mouseX>buttonX6&& mouseX<buttonX6 +buttonWidth6&& mouseY>buttonY6 && mouseY<buttonY6+buttonHeight6)rect3=true ; }
-  
+
+ {
+    button7=false;
+  if (mouseX>buttonX6&& mouseX<buttonX6 +buttonWidth6&& mouseY>buttonY6 && mouseY<buttonY6+buttonHeight6)   button7=true ; }
+
+
+{
+     textDraw7=false;
+  if (mouseX>buttonX6&& mouseX<buttonX6 +buttonWidth6&& mouseY>buttonY6 && mouseY<buttonY6+buttonHeight6)  textDraw7 =true ; }
+
+
+
   {
     Circle2=false;
    if (mouseX>buttonX7&& mouseX<buttonX7+buttonWidth7&& mouseY>buttonY7&& mouseY<buttonY7+buttonHeight7) Circle2=true;}
    
+   
+   {
+      button8=false;
+   if (mouseX>buttonX7&& mouseX<buttonX7+buttonWidth7&& mouseY>buttonY7&& mouseY<buttonY7+buttonHeight7) button8=true;}
+   
+   
+   
+   {
+   textDraw8=false;
+   if (mouseX>buttonX7&& mouseX<buttonX7+buttonWidth7&& mouseY>buttonY7&& mouseY<buttonY7+buttonHeight7) textDraw8=true;}
+   
+   
+   
+   
+   
+ 
+   
    {triangle3=false;
    if (mouseX>buttonX8&& mouseX<buttonX8+buttonWidth8&& mouseY>buttonY8&& mouseY<buttonY8+buttonHeight8) triangle3=true;   }
    
+   
+   
+   
+   
+   
+   { button9=false;
+   if (mouseX>buttonX8&& mouseX<buttonX8+buttonWidth8&& mouseY>buttonY8&& mouseY<buttonY8+buttonHeight8) button9=true;   }
+   
+   
+   
+    { textDraw9=false;
+   if (mouseX>buttonX8&& mouseX<buttonX8+buttonWidth8&& mouseY>buttonY8&& mouseY<buttonY8+buttonHeight8)  textDraw9=true;   }
+   
+   
+   
+  
   { 
     button10=false;
     
