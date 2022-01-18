@@ -169,7 +169,7 @@ void mousePressed()
    {  
    button4 = false ;
 
-     if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)    button4 = = true ;  }
+     if (mouseX>buttonX3 &&  mouseX<buttonX3+buttonWidth3&&  mouseY>buttonY3 && mouseY<buttonY3+buttonHeight3)    button4 = true ;  }
   
   
   {
